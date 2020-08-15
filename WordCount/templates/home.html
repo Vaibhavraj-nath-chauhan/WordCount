@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning Djanga</title>
+    </head>
+    <body>
+        <center><h1>Its Working</h1>
+        <form action="{% url 'count' %}">
+            <textarea name="Area" cols=40 rows=10>Welcome to Counter</textarea>
+            <br>
+            <input type="submit" value="Count">
+        </form>
+        </center>
+
+        <center><br><br>
+            <a style="background-color: gold;" href="{% url 'about'%}">About Me</a>
+        </center>
+
+
+
+
+    </body>
+</html>

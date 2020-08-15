@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Counted</title>
+    </head>
+    <body>
+        
+        <center>
+        <h1>Counted Words</h1>
+        <h3 style="color: chocolate; height: 30px;">Your Text</h3>
+        <h5>{{ text }}</h5>
+        <h3 style="color: burlywood;">Counted Words</h3>
+        <h4 style="display: inline-block;">Counted Words are = <h1 style="color: darkred;font-style: italic; display: inline-block;">{{ count }}</h1></h4>
+        </center>
+        <br><br><br>
+        {% for word,value in dict %}
+        {{word}} = {{value}}
+        <br>
+        {% endfor %}
+
+        <center>
+            <a style="border: black,solid;width: '90px'; background-color: brown; color: burlywood;" href="{% url 'home'%}">Go to main page</a><br><br>
+            <a style="border: black,solid;width: '90px'; background-color: brown; color: burlywood;" href="{% url 'about'%}">About Me</a>
+        </center>
+    </body>
+</html>
